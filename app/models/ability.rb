@@ -28,6 +28,7 @@ class Ability
       else
         can :manage, User, id: user.id
         can :read, Ticket, user: user
+        can :read, TicketType
     end
   end
 end
